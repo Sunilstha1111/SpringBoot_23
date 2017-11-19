@@ -20,8 +20,8 @@ public class User {
     @Column (name = "first_name")
     private String firstName;
 
-    @Column (name = "lastName")
-    private String lastname;
+    @Column (name = "last_ame")
+    private String lastName;
 
     @Column (name = "enabled")
     private boolean enabled;
@@ -66,12 +66,12 @@ public class User {
         this.firstName = firstName;
     }
 
-    public String getLastname() {
-        return lastname;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public boolean isEnabled() {
