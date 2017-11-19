@@ -7,7 +7,20 @@ import java.util.Collection;
 @Entity
 public class User {
 
+    public User(String email, String password, String firstName, String lastName, boolean enabled, String username) {
+        this.email = email;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.enabled = enabled;
+        this.username = username;
+    }
+
+    public User() {
+    }
+
     @Id
+
     @GeneratedValue (strategy = GenerationType.AUTO)
     private long id;
 
